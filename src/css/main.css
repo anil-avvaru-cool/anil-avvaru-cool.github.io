@@ -3,6 +3,18 @@
   font-size: 10px;
 }
 
+.carousel .carousel-item {
+  height: 40vh;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 40vh;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
