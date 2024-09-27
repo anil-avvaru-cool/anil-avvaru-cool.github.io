@@ -21,12 +21,9 @@ class MyNavBar extends HTMLElement{
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
+              </li>              
               <li class="nav-item">
-                <a class="nav-link" href="skills.html">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="certifications.html">Certifications</a>
+                <a class="nav-link" href="about-us.html">About us</a>
               </li>             
               <li class="nav-item">
                 <a class="nav-link" href="#">Testimonial</a>
@@ -57,7 +54,7 @@ class MyHeader extends HTMLElement{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="../css/main.css" rel="stylesheet">
-    <title>${titleVal}</title>
+    <title>${companyName} - ${titleVal}</title>
     <meta name="description" content="${descriptionVal}">
 </head>`
     }
