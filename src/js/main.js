@@ -1,5 +1,14 @@
 import '../css/main.css';
 
+const companyName = 'Butterfly IT Services';
+
+function pageLoad()
+        {
+          const elem = document.getElementById("companyNameHeading");
+          elem.innerHTML = companyName;
+        }
+        window.onload = pageLoad;
+
 class MyNavBar extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
@@ -38,8 +47,7 @@ class MyHeader extends HTMLElement{
   constructor() {
     super();    
   }
-    connectedCallback(){
-      console.log('header called');
+    connectedCallback(){      
       const titleVal = this.getAttribute("title");
       const descriptionVal = this.getAttribute("description");
       
@@ -62,7 +70,7 @@ class MyFooter extends HTMLElement{
         this.innerHTML = `
         <footer>       
   <p class="text-center cust-small-font">  
-  &copy; ${new Date().getFullYear()}, Anil Kumar Avvaru, Hand crafted website using bootstrap from scratch.</p>  
+  &copy; ${new Date().getFullYear()}, ${companyName}, Hand crafted website using bootstrap from scratch.</p>  
 </footer>`
     }
 }
