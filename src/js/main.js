@@ -1,3 +1,13 @@
+import '../css/main.css';
+
+const companyName = 'Butterfly IT Services';
+
+function pageLoad()
+        {
+          const elem = document.getElementById("companyNameHeading");
+          elem.innerHTML = companyName;
+        }
+        window.onload = pageLoad;
 
 class MyNavBar extends HTMLElement{
     connectedCallback(){
@@ -37,15 +47,16 @@ class MyHeader extends HTMLElement{
   constructor() {
     super();    
   }
-    connectedCallback(){
+    connectedCallback(){      
       const titleVal = this.getAttribute("title");
       const descriptionVal = this.getAttribute("description");
+      
         this.innerHTML = `
         <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
     <title>${titleVal}</title>
     <meta name="description" content="${descriptionVal}">
 </head>`
@@ -59,7 +70,7 @@ class MyFooter extends HTMLElement{
         this.innerHTML = `
         <footer>       
   <p class="text-center cust-small-font">  
-  &copy; ${new Date().getFullYear()}, Anil Kumar Avvaru, Hand crafted website using bootstrap from scratch.</p>  
+  &copy; ${new Date().getFullYear()}, ${companyName}, Hand crafted website using bootstrap from scratch.</p>  
 </footer>`
     }
 }

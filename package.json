@@ -2,8 +2,10 @@
   "name": "anil-avvaru-cool.github.io",
   "version": "1.0.0",
   "description": "Anil Avvaru portfolio",
-  "main": "index.html",
+  "source": "src/index.html",
   "scripts": {
+    "start": "parcel",
+    "build": "parcel build src/index.html src/contact.html src/projects.html src/skills.html src/certifications.html --no-optimize --no-cache --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,6 +33,7 @@
     "sass": "^1.78.0"
   },
   "devDependencies": {
-    "gulp": "^5.0.0"
+    "gulp": "^5.0.0",
+    "parcel": "latest"
   }
 }
