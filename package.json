@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build src/index.html src/contact.html src/projects.html src/skills.html src/certifications.html --no-optimize --no-cache --public-url ./",
+    "build": "parcel build src/index.html src/contact.html src/about-us.html --no-optimize --no-cache --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
