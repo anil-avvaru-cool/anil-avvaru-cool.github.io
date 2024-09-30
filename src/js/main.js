@@ -1,6 +1,6 @@
 import '../css/main.css';
 
-const companyName = 'Butterfly IT Services';
+const companyName = 'Rihati Technologies';
 
 function pageLoad()
         {
