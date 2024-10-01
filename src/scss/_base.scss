@@ -2,12 +2,19 @@
   font-size: 10px;
 }
 
+.carousel .carousel-item {
+  height: 40vh;
+}
 
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 40vh;
+}
 
-$small: 300px;
-$medium: 900px;
-
-@media screen and (max-width: $small) {
+@media screen and (max-width: $proj-sm) {
   .carousel .carousel-item {
     height: 40vh;
   }
@@ -21,7 +28,7 @@ $medium: 900px;
   }
 }
 
-@media screen and (min-width: $medium) {
+@media screen and (min-width: $proj-lg) {
   .carousel .carousel-item {
     height: 60vh;
   }
