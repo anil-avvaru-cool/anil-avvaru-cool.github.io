@@ -1,6 +1,6 @@
 import '../css/main.css';
 
-const companyName = 'Butterfly IT Services';
+const companyName = 'Rihati Technologies';
 
 function pageLoad()
         {
@@ -21,15 +21,12 @@ class MyNavBar extends HTMLElement{
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
+              </li>              
               <li class="nav-item">
-                <a class="nav-link" href="skills.html">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="certifications.html">Certifications</a>
+                <a class="nav-link" href="about-us.html">About us</a>
               </li>             
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonial</a>
+                <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -57,7 +54,7 @@ class MyHeader extends HTMLElement{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="../css/main.css" rel="stylesheet">
-    <title>${titleVal}</title>
+    <title>${companyName} - ${titleVal}</title>
     <meta name="description" content="${descriptionVal}">
 </head>`
     }
@@ -68,9 +65,25 @@ customElements.define('my-header',MyHeader);
 class MyFooter extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
-        <footer>       
-  <p class="text-center cust-small-font">  
-  &copy; ${new Date().getFullYear()}, ${companyName}, Hand crafted website using bootstrap from scratch.</p>  
+        <footer>    
+           <div class="row justify-content-center">
+        <div class="col-lg-6 fs-6">
+        <p class="text-center cust-small-font">  
+  <a href="index.html" class=" border-0">
+                  Home
+                </a>
+                <a href="contact.html" class=" border-0">Contact us</a>
+                <a href="about-us.html" class=" border-0">About us</a>
+                <a href="sitemap.html" class="border-0">Site Map</a> 
+  </p>
+        
+        </div>
+         <div class="row justify-content-center">
+        <div class="col-lg-6 " >
+        <p class="text-center cust-small-font">  
+  &copy; ${new Date().getFullYear()}, ${companyName}, Hand crafted website using bootstrap from scratch.</p>
+        </div>
+        </div>
 </footer>`
     }
 }
