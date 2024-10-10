@@ -67,13 +67,16 @@ class MyFooter extends HTMLElement{
         this.innerHTML = `
         <footer>    
            <div class="row justify-content-center">
-        <div class="col-lg-3 fs-8">
-        <a href="index.html" class=" border-0">
+        <div class="col-lg-6 fs-6">
+        <p class="text-center cust-small-font">  
+  <a href="index.html" class=" border-0">
                   Home
                 </a>
                 <a href="contact.html" class=" border-0">Contact us</a>
                 <a href="about-us.html" class=" border-0">About us</a>
                 <a href="sitemap.html" class="border-0">Site Map</a> 
+  </p>
+        
         </div>
          <div class="row justify-content-center">
         <div class="col-lg-6 " >
