@@ -26,7 +26,7 @@ class MyNavBar extends HTMLElement{
                 <a class="nav-link" href="about-us.html">About us</a>
               </li>             
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonial</a>
+                <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
